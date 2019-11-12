@@ -220,6 +220,7 @@ body {
 #grid6 > div:nth-of-type(4) {
   border-bottom: 1rem solid white;
   border-right: 1rem solid transparent;
-  grid-column: 17/18;
+  grid-column: 17/19;
   grid-row: 18/19;
+  margin-right: 0.9rem;
 }
