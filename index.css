@@ -10,6 +10,7 @@
 body {
   background: var(--beige);
   padding-left: 7rem;
+  overflow: hidden;
 }
 
 .flex {
