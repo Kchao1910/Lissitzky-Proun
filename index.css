@@ -177,7 +177,8 @@ body {
 #grid5 > div:nth-of-type(3) {
   border-right: 2px solid var(--tan);
   grid-column: 11/12;
-  grid-row: 17/27;
+  grid-row: 16/27;
+  margin-top: 0.7rem;
 }
 
 #grid5 > div:nth-of-type(4) {
