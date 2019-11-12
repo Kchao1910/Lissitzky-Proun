@@ -11,6 +11,10 @@ body {
   background: var(--beige);
 }
 
+main {
+  padding-left: 2rem;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -123,7 +127,7 @@ body {
 #grid3 > div:nth-of-type(9) {
   background: var(--gray);
   grid-column: 20/21;
-  grid-row: 9/19;
+  grid-row: 8/19;
 }
 
 #grid3 > div:nth-of-type(10) {
