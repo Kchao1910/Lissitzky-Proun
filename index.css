@@ -230,5 +230,6 @@ body {
     overflow-x: hidden;
     padding-left: 2rem;
     position: fixed;
+    margin-top: 4rem;
   }
 }
