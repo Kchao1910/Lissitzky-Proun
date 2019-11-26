@@ -10,7 +10,6 @@
 body {
   background: var(--beige);
   padding-left: 7rem;
-  overflow: hidden;
 }
 
 .flex {
@@ -226,3 +225,9 @@ body {
   margin-right: 0.9rem;
 }
 
+@media screen and (max-width: 415px) {
+  body {
+    overflow-x: hidden;
+    position: fixed;
+  }
+}
