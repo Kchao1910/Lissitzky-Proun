@@ -10,6 +10,7 @@
 body {
   background: var(--beige);
   padding-left: 7rem;
+  overflow: hidden;
 }
 
 .flex {
@@ -224,3 +225,4 @@ body {
   grid-row: 18/19;
   margin-right: 0.9rem;
 }
+
