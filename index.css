@@ -228,6 +228,7 @@ body {
 @media screen and (max-width: 415px) {
   body {
     overflow-x: hidden;
+    padding-left: 2rem;
     position: fixed;
   }
 }
