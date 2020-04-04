@@ -13,8 +13,12 @@ body {
 }
 
 .flex {
+  animation: 20s linear rotate infinite;
+  animation-delay: 2s;
   display: flex;
   justify-content: center;
+  transform-origin: center;
+  transform-style: preserve-3d;
 }
 
 .grid {
@@ -49,12 +53,14 @@ body {
 }
 
 #grid1 > div:nth-of-type(1) {
+  animation: 4s linear slideDown infinite;
   background: var(--silver);
   grid-column: 5/7;
   grid-row: 21/28;
 }
 
 #grid2 > div:nth-of-type(1) {
+  animation: 4s linear slideUp infinite;
   margin-top: 0.5rem;
   background: white;
   grid-column: 7/11;
@@ -109,6 +115,7 @@ body {
 }
 
 #grid3 > div:nth-of-type(7) {
+  animation: 4s linear slideLeft infinite;
   background: black;
   grid-column: 14/17;
   grid-row: 7/10;
@@ -134,6 +141,7 @@ body {
 }
 
 #grid3 > div:nth-of-type(11) {
+  animation: 4s linear slideRight infinite;
   background: var(--red);
   grid-column: 13/17;
   grid-row: 21/24;
@@ -142,6 +150,7 @@ body {
 }
 
 #grid3 > div:nth-of-type(12) {
+  animation: 4s linear slideRight infinite;
   background: var(--red);
   grid-column: 14/17;
   grid-row: 12/15;
@@ -155,6 +164,7 @@ body {
 }
 
 #grid4 > div:nth-of-type(1) {
+  animation: 4s linear slideDown infinite;
   background: var(--red);
   grid-column: 13/15;
   grid-row: 13/15;
@@ -162,6 +172,7 @@ body {
 }
 
 #grid5 > div:nth-of-type(1) {
+  animation: 4s linear slideUp infinite;
   background: var(--red);
   border-radius: 1rem;
   grid-column: 11/13;
@@ -211,6 +222,7 @@ body {
 }
 
 #grid6 > div:nth-of-type(3) {
+  animation: 4s linear slideLeft infinite;
   background: white;
   grid-column: 16/21;
   grid-row: 19/21;
@@ -224,6 +236,80 @@ body {
   grid-row: 18/19;
   margin-right: 0.9rem;
 }
+
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 0, 0);
+  } 10% {
+    transform: rotate3d(0, 1, 0, 1/10turn);
+  } 20% {
+    transform: rotate3d(0, 1, 0, 1/5turn);
+  } 30% {
+    transform: rotate3d(0, 1, 0, 3/10turn);
+  } 40% {
+    transform: rotate3d(0, 1, 0, 2/5turn);
+  } 50% {
+    transform: rotate3d(0, 1, 0, 1/2turn);
+  } 60% {
+    transform: rotate3d(0, 1, 0, 3/5turn);
+  } 70% {
+    transform: rotate3d(0, 1, 0, 7/10turn);
+  } 80% {
+    transform: rotate3d(0, 1, 0, 4/5turn);
+  } 90% {
+    transform: rotate3d(0, 1, 0, 9/10turn);
+  } 100% {
+    transform: rotate3d(0, 1, 0, 1turn);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translate(0, 0);
+  } 50% {
+    transform: translate(0, 100%);
+  } 75% {
+    transform: translate(0, 0);
+  } 100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translate(0, 0);
+  } 50% {
+    transform: translate(0, -100%);
+  } 75% {
+    transform: translate(0, 0);
+  } 100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translate(0, 0);
+  } 50% {
+    transform: translate(-100%, 0);
+  } 75% {
+    transform: translate(0, 0);
+  } 100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translate(0, 0);
+  } 50% {
+    transform: translate(100%, 0);
+  } 75% {
+    transform: translate(0, 0);
+  } 100% {
+    transform: translate(0, 0);
+  }
+}  
 
 @media screen and (max-width: 415px) {
   body {
